@@ -1,8 +1,11 @@
 window.onload =()=>{
 const rootElement = document.getElementById('root');
-rootElement.innerHTML ="Hello from my first SPA App!"
+const button =document.createElement('button');
 
-
-
+button.innerHTML = "Current date";
+button.addEventListener('click',()=>{
+    button.innerHTML = new Date().toString();
+});
+    rootElement.appendChild(button);
 
 };
