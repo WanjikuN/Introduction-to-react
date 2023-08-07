@@ -1,7 +1,21 @@
 export default function Home() {
+  function ListItems(){
+    const ints = [81,2,3];
+    return(
+      <>
+      {
+        ints.map(id =>{
+          return(
+            <li>{id}</li>
+          )
+        })
+      }
+      </>
+    )
+  }
   return (
-   <div>
-    Hello from Pat
-   </div>
+  <ul>
+   <ListItems/>
+  </ul>
   )
 }
