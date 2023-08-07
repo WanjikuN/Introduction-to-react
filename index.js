@@ -9,4 +9,12 @@ const rootElement = document.getElementById('root');
 // });
 //     rootElement.appendChild(button);
 
+
+// loop through an array
+const ints= [9,2,3];
+ints.forEach(i=>{
+    let li =document.createElement('li');
+    li.innerHTML = i;
+    rootElement.appendChild(li);
+})
 };
